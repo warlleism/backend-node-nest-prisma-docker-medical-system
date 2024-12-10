@@ -1,14 +1,19 @@
-FROM node:alpine
+# Base Image
+FROM node:latest
 
 WORKDIR /usr/app
 
-COPY prisma ./prisma
-COPY package*.json ./
+COPY ./.env ./
 
-RUN npm install
+COPY prisma ./prisma
+
+COPY package*.json ./
+RUN npm install --quiet --no-optional --no-fund --loglevel=error
+
+RUN npx prisma generate
 
 COPY . .
 
 EXPOSE 3000
 
-CMD ["npm", "start"]
+CMD ["npm", "run", "start:dev"]

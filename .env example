@@ -1,2 +1,2 @@
-DATABASE_URL="postgresql://postgres:root@localhost:5432/drs_consultas"
+DATABASE_URL="postgresql://drs_consultas_owner:K1BuDsvGerJ7@ep-lingering-wildflower-a5g77so8.us-east-2.aws.neon.tech/drs_consultas?sslmode=require"
 JWT_PASS=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9
