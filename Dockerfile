@@ -1,4 +1,3 @@
-# Base Image
 FROM node:latest
 
 WORKDIR /usr/app
