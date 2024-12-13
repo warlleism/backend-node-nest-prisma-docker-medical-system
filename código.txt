@@ -1,0 +1,11 @@
+//criar container
+docker run --name my-postgres -p 5433:5432 -e POSTGRES_PASSWORD=postgres -d postgres
+
+//acessar o container
+docker exec -it my-postgres-test psql -U postgres
+
+//criar banco de dados
+CREATE DATABASE usuarios;
+
+//limpar cache - quando a senha configurada não passa
+docker-compose down --volumes
