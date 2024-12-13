@@ -1,2 +1,2 @@
-DATABASE_URL="postgresql://drs_consultas_owner:K1BuDsvGerJ7@ep-lingering-wildflower-a5g77so8.us-east-2.aws.neon.tech/drs_consultas?sslmode=require"
+DATABASE_URL=postgresql://postgres:4321@host.docker.internal:5433/drs_consultas?schema=public
 JWT_PASS=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9
